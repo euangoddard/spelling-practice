@@ -1,0 +1,17 @@
+<h2 class="text-xl font-medium mb-2">Enter spellings</h2>
+<p class="mb-4">
+  Enter the spellings you want to practice. You can enter as many spellings as
+  you want. Each spelling should be on a new line.
+</p>
+
+<form (submit)="storeSpellings($event)">
+  <div class="form-control">
+    <textarea
+      placeholder="Enter one spelling per line"
+      class="textarea textarea-bordered textarea-lg w-full mb-2 min-h-80"
+      [value]="spellingsText()"
+      (input)="updateSpellingsText($event)"
+    ></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Start</button>
+</form>
