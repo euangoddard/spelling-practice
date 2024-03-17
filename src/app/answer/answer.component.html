@@ -44,9 +44,9 @@
       </button>
       <input
         type="text"
-        class="input input-bordered grow"
+        class="input input-bordered w-48 grow"
         [class.border-error]="state() == AnswerState.Incorrect"
-        placeholder="Spell what you hear"
+        placeholder="Spell the word you hear"
         spellcheck="false"
         (input)="handleInput($event)"
       />
